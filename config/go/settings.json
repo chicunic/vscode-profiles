@@ -1,0 +1,178 @@
+{
+  // Profile: go
+  // Editor - Basic Settings
+  "editor.fontFamily": "Inconsolata, 'Source Han Sans'",
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabCompletion": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Editor - Language-Specific Settings
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on"
+  },
+  "[proto3]": {
+    "editor.defaultFormatter": "DrBlury.protobuf-vsc"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "bradymholt.pgformatter"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // File Settings
+  "files.associations": {
+    "*.conf": "apacheconf",
+    "LICENSE": "plaintext"
+  },
+  "files.exclude": {
+    "**/.Trash/**": true,
+    "**/Google Drive/**": true,
+    "**/Library/**": true,
+    "**/OneDrive*/**": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.Trash/**": true,
+    "**/.venv/**": true,
+    "**/Google Drive/**": true,
+    "**/Library/**": true,
+    "**/OneDrive*/**": true,
+    "**/__pycache__/**": true,
+    "**/node_modules/**": true,
+    "**/venv/**": true
+  },
+
+  // Diff Editor
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+
+  // Explorer
+  "explorer.incrementalNaming": "smart",
+
+  // Git Settings
+  "git.autofetch": false,
+  "github.gitProtocol": "ssh",
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // JavaScript/TypeScript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Prettier
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+
+  // Search
+  "search.exclude": {
+    "**/.Trash/**": true,
+    "**/.venv/**": true,
+    "**/Google Drive/**": true,
+    "**/Library/**": true,
+    "**/OneDrive*/**": true,
+    "**/__pycache__/**": true,
+    "**/node_modules/**": true,
+    "**/venv/**": true
+  },
+
+  // Terminal
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+
+  // Workbench
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vs-minimal",
+
+  // Window
+  "window.restoreWindows": "none",
+
+  // Chat & AI
+  "chat.agent.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+
+  // Remote
+  "remote.defaultExtensionsIfInstalledLocally": ["GitHub.copilot", "GitHub.copilot-chat"],
+
+  // Telemetry
+  "redhat.telemetry.enabled": false,
+
+  // Go
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "go.testFlags": ["-v"],
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+
+  // Protobuf
+  "protobuf.externalLinter.linter": "buf",
+  "protobuf.externalLinter.bufPath": "/opt/homebrew/bin/buf",
+  "protobuf.buf.path": "/opt/homebrew/bin/buf",
+  "protobuf.protoc.path": "/opt/homebrew/bin/protoc",
+
+  // YAML Schema
+  "yaml.schemas": {
+    "https://golangci-lint.run/jsonschema/golangci.jsonschema.json": ".golangci.yaml"
+  }
+}

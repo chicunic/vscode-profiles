@@ -1,0 +1,20 @@
+[
+  "amazonwebservices.aws-toolkit-vscode",
+  "bradymholt.pgformatter",
+  "davidanson.vscode-markdownlint",
+  "drblury.protobuf-vsc",
+  "editorconfig.editorconfig",
+  "esbenp.prettier-vscode",
+  "github.copilot",
+  "github.copilot-chat",
+  "github.vscode-github-actions",
+  "golang.go",
+  "humao.rest-client",
+  "kddejong.vscode-cfn-lint",
+  "mhutchie.git-graph",
+  "ms-azuretools.vscode-containers",
+  "ms-azuretools.vscode-docker",
+  "ms-ceintl.vscode-language-pack-zh-hans",
+  "ms-ossdata.vscode-pgsql",
+  "redhat.vscode-yaml"
+]

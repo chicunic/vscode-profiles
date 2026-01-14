@@ -1,0 +1,80 @@
+{
+  "servers": {
+    "awslabs.aws-documentation-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.cfn-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["awslabs.cfn-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${input:AWS_PROFILE}"
+      }
+    },
+    "awslabs.cloudwatch-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["awslabs.cloudwatch-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${input:AWS_PROFILE}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      }
+    },
+    "awslabs.iam-mcp-server": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["awslabs.iam-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${input:AWS_PROFILE}"
+      }
+    },
+    "go-dev-mcp": {
+      "type": "stdio",
+      "command": "godevmcp",
+      "args": ["serve"]
+    },
+    "io.github.github/github-mcp-server": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "${input:Authorization}"
+      },
+      "gallery": "https://api.mcp.github.com",
+      "version": "0.27.0"
+    },
+    "io.github.upstash/context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@upstash/context7-mcp@1.0.31"],
+      "env": {
+        "CONTEXT7_API_KEY": "${input:CONTEXT7_API_KEY}"
+      },
+      "gallery": "https://api.mcp.github.com",
+      "version": "1.0.31"
+    }
+  },
+  "inputs": [
+    {
+      "id": "AWS_PROFILE",
+      "type": "promptString",
+      "description": "AWS profile name"
+    },
+    {
+      "id": "Authorization",
+      "type": "promptString",
+      "description": "Authentication token (PAT or App token)",
+      "password": true
+    },
+    {
+      "id": "CONTEXT7_API_KEY",
+      "type": "promptString",
+      "description": "API key for authentication",
+      "password": true
+    }
+  ]
+}

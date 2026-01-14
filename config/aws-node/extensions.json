@@ -1,0 +1,13 @@
+[
+  "biomejs.biome",
+  "bradlc.vscode-tailwindcss",
+  "davidanson.vscode-markdownlint",
+  "editorconfig.editorconfig",
+  "github.copilot",
+  "github.copilot-chat",
+  "github.vscode-github-actions",
+  "kddejong.vscode-cfn-lint",
+  "mhutchie.git-graph",
+  "ms-ceintl.vscode-language-pack-zh-hans",
+  "redhat.vscode-yaml"
+]
