@@ -1,4 +1,5 @@
 [
+  "anthropic.claude-code",
   "biomejs.biome",
   "bradlc.vscode-tailwindcss",
   "davidanson.vscode-markdownlint",

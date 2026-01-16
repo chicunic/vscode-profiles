@@ -1,4 +1,5 @@
 [
+  "anthropic.claude-code",
   "bradymholt.pgformatter",
   "davidanson.vscode-markdownlint",
   "drblury.protobuf-vsc",

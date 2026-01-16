@@ -1,5 +1,6 @@
 [
   "amazonwebservices.aws-toolkit-vscode",
+  "anthropic.claude-code",
   "bradymholt.pgformatter",
   "davidanson.vscode-markdownlint",
   "drblury.protobuf-vsc",

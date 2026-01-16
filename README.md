@@ -10,6 +10,7 @@
 | **`aws-go`** | AWS Go 后端开发 | AWS (Full Suite), Go, Prettier |
 | **`node`** | 通用/GCP 前端开发 | GCP, Biome |
 | **`go`** | 通用/GCP Go 后端开发 | GCP, Go, PostgreSQL, Prettier |
+| **`swift`** | Swift 开发 | Swift, GitHub Actions, Context7 |
 | **`default`** | 默认/通用环境 | GCP, 通用配置, Prettier |
 
 ## 📂 配置文件说明
@@ -19,6 +20,14 @@
 - **`settings.json`**: 编辑器偏好设置（格式化行为、字体、语言特定配置等）。
 - **`extensions.json`**: 该场景推荐的扩展列表。切换 Profile 后，VS Code 会提示您安装。
 - **`mcp.json`**: AI 助手（如 Claude, Gemini）所需的 MCP 服务器配置。
+
+### 项目本地配置
+
+项目根目录下的 `.vscode` 文件夹包含了开发本项目时的 VS Code 配置：
+
+- **`settings.json`**: 配置 Biome 作为默认格式化工具，保存时自动格式化
+- **`extensions.json`**: 推荐安装 Biome 扩展
+- **`launch.json`**: Node.js 调试配置
 
 ## 🔍 扩展一致性检查 (快捷命令)
 
@@ -64,8 +73,10 @@ comm -13 <(code --list-extensions --profile go | sort) <(jq -r '.[]' config/go/e
 code --list-extensions --profile go | jq -R . | jq -s . > config/go/extensions.json
 ```
 
----
+### swift
 
-### 🛠️ 维护说明
-
-如果您需要修改或格式化本项目的所有配置文件，请先运行 `pnpm install` 安装必要的工具，然后可以使用 `pnpm format` 进行全量格式化，或使用 `pnpm check` 进行检查。
+```bash
+comm -23 <(code --list-extensions --profile swift | sort) <(jq -r '.[]' config/swift/extensions.json | sort)
+comm -13 <(code --list-extensions --profile swift | sort) <(jq -r '.[]' config/swift/extensions.json | sort)
+code --list-extensions --profile swift | jq -R . | jq -s . > config/swift/extensions.json
+```

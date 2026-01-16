@@ -1,4 +1,5 @@
 [
+  "anthropic.claude-code",
   "davidanson.vscode-markdownlint",
   "editorconfig.editorconfig",
   "esbenp.prettier-vscode",
