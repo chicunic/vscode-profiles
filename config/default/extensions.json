@@ -1,11 +1,11 @@
 [
   "anthropic.claude-code",
+  "bierner.markdown-mermaid",
   "davidanson.vscode-markdownlint",
-  "editorconfig.editorconfig",
   "esbenp.prettier-vscode",
-  "github.copilot",
   "github.copilot-chat",
   "github.vscode-github-actions",
+  "google.geminicodeassist",
   "mhutchie.git-graph",
   "ms-ceintl.vscode-language-pack-zh-hans",
   "ms-vscode-remote.remote-ssh",

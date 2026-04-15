@@ -1,10 +1,11 @@
 [
   "anthropic.claude-code",
   "davidanson.vscode-markdownlint",
-  "editorconfig.editorconfig",
-  "github.copilot",
+  "esbenp.prettier-vscode",
   "github.copilot-chat",
   "github.vscode-github-actions",
+  "google.geminicodeassist",
+  "llvm-vs-code-extensions.lldb-dap",
   "mhutchie.git-graph",
   "ms-ceintl.vscode-language-pack-zh-hans",
   "redhat.vscode-yaml",

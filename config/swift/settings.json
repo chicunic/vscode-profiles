@@ -7,7 +7,6 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "on",
-
   // Editor - Language-Specific Settings
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
@@ -16,55 +15,54 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true
+      "strings": true,
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[json]": {
     "editor.tabSize": 2,
     "editor.quickSuggestions": {
-      "strings": true
+      "strings": true,
     },
-    "editor.suggest.insertMode": "replace"
+    "editor.suggest.insertMode": "replace",
   },
   "[jsonc]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": "explicit"
+      "source.fixAll.markdownlint": "explicit",
     },
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "off",
-      "strings": "off"
+      "strings": "off",
     },
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
   },
   "[swift]": {
     "editor.defaultFormatter": "swiftlang.swift-vscode",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
-
   // File Settings
   "files.associations": {
     "*.conf": "apacheconf",
-    "LICENSE": "plaintext"
+    "LICENSE": "plaintext",
   },
   "files.exclude": {
     "**/.Trash/**": true,
     "**/Google Drive/**": true,
     "**/Library/**": true,
-    "**/OneDrive*/**": true
+    "**/OneDrive*/**": true,
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -74,29 +72,15 @@
     "**/DerivedData/**": true,
     "**/Google Drive/**": true,
     "**/Library/**": true,
-    "**/OneDrive*/**": true
+    "**/OneDrive*/**": true,
   },
-
   // Diff Editor
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
-
   // Explorer
   "explorer.incrementalNaming": "smart",
-
   // Git Settings
   "git.autofetch": false,
   "github.gitProtocol": "ssh",
-
-  // GitHub Copilot
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-
   // Search
   "search.exclude": {
     "**/.Trash/**": true,
@@ -104,33 +88,29 @@
     "**/DerivedData/**": true,
     "**/Google Drive/**": true,
     "**/Library/**": true,
-    "**/OneDrive*/**": true
+    "**/OneDrive*/**": true,
   },
-
   // Terminal
   "terminal.integrated.confirmOnExit": "hasChildProcesses",
-
-  // Workbench
-  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vs-minimal",
-
   // Window
   "window.restoreWindows": "none",
-
   // Chat & AI
   "chat.agent.enabled": true,
   "chat.mcp.gallery.enabled": true,
-
-  // Remote
-  "remote.defaultExtensionsIfInstalledLocally": ["GitHub.copilot", "GitHub.copilot-chat"],
-
+  "chat.useAgentSkills": true,
+  "chat.viewSessions.orientation": "stacked",
   // Telemetry
   "redhat.telemetry.enabled": false,
-
   // Swift Extension Settings
   "swift.path": "/usr/bin",
   "swift.buildArguments": [],
   "swift.testEnvironmentVariables": {},
   "swift.autoGenerateLaunchConfigurations": true,
-  "swift.backgroundCompilation": true
+  "swift.backgroundCompilation": true,
+
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
+  "geminicodeassist.project": "pro-footing-69fzb",
 }

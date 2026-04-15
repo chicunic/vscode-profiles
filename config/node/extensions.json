@@ -1,13 +1,20 @@
 [
   "anthropic.claude-code",
-  "biomejs.biome",
   "bradlc.vscode-tailwindcss",
   "davidanson.vscode-markdownlint",
-  "editorconfig.editorconfig",
-  "github.copilot",
+  "dbaeumer.vscode-eslint",
+  "esbenp.prettier-vscode",
   "github.copilot-chat",
   "github.vscode-github-actions",
+  "google.geminicodeassist",
+  "googlecloudtools.cloudcode",
   "mhutchie.git-graph",
   "ms-ceintl.vscode-language-pack-zh-hans",
+  "ms-toolsai.jupyter",
+  "ms-toolsai.jupyter-keymap",
+  "ms-toolsai.jupyter-renderers",
+  "ms-toolsai.vscode-jupyter-cell-tags",
+  "ms-toolsai.vscode-jupyter-slideshow",
+  "ms-vscode.vscode-typescript-next",
   "redhat.vscode-yaml"
 ]

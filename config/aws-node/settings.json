@@ -7,11 +7,9 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "on",
-  "editor.defaultFormatter": "biomejs.biome",
-
   // Editor - Language-Specific Settings
   "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
@@ -20,68 +18,77 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true
+      "strings": true,
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[html]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
   },
   "[json]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
     "editor.quickSuggestions": {
-      "strings": true
+      "strings": true,
     },
-    "editor.suggest.insertMode": "replace"
+    "editor.suggest.insertMode": "replace",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": "explicit"
+      "source.fixAll.markdownlint": "explicit",
     },
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "off",
-      "strings": "off"
+      "strings": "off",
     },
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
 
   // File Settings
   "files.associations": {
     "*.conf": "apacheconf",
-    "LICENSE": "plaintext"
+    "LICENSE": "plaintext",
   },
   "files.exclude": {
     "**/.Trash/**": true,
     "**/Google Drive/**": true,
     "**/Library/**": true,
-    "**/OneDrive*/**": true
+    "**/OneDrive*/**": true,
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -93,11 +100,10 @@
     "**/OneDrive*/**": true,
     "**/__pycache__/**": true,
     "**/node_modules/**": true,
-    "**/venv/**": true
+    "**/venv/**": true,
   },
 
   // Diff Editor
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
 
   // Explorer
@@ -107,18 +113,13 @@
   "git.autofetch": false,
   "github.gitProtocol": "ssh",
 
-  // GitHub Copilot
-  "github.copilot.enable": {
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-
   // JavaScript/TypeScript
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.preferences.quoteStyle": "single",
+
+  // Prettier
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
 
   // Search
   "search.exclude": {
@@ -129,7 +130,7 @@
     "**/OneDrive*/**": true,
     "**/__pycache__/**": true,
     "**/node_modules/**": true,
-    "**/venv/**": true
+    "**/venv/**": true,
   },
 
   // Terminal
@@ -145,9 +146,11 @@
   // Chat & AI
   "chat.agent.enabled": true,
   "chat.mcp.gallery.enabled": true,
+  "chat.useAgentSkills": true,
 
-  // Remote
-  "remote.defaultExtensionsIfInstalledLocally": ["GitHub.copilot", "GitHub.copilot-chat"],
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
 
   // Telemetry
   "redhat.telemetry.enabled": false,
@@ -158,9 +161,17 @@
     "javascriptreact": "javascriptreact",
     "typescript": "typescript",
     "typescriptreact": "typescriptreact",
-    "html": "html"
+    "html": "html",
   },
   "editor.quickSuggestions": {
-    "strings": true
-  }
+    "strings": true,
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+  },
+  "geminicodeassist.project": "pro-footing-69fzb",
 }

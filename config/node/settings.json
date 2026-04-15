@@ -7,11 +7,9 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "on",
-  "editor.defaultFormatter": "biomejs.biome",
-
   // Editor - Language-Specific Settings
   "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[dockercompose]": {
     "editor.autoIndent": "advanced",
@@ -27,19 +25,22 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[json]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
     "editor.quickSuggestions": {
       "strings": true
@@ -47,8 +48,11 @@
     "editor.suggest.insertMode": "replace"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
@@ -64,12 +68,15 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "on"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[yaml]": {
@@ -101,7 +108,6 @@
   },
 
   // Diff Editor
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
 
   // Explorer
@@ -111,20 +117,13 @@
   "git.autofetch": false,
   "github.gitProtocol": "ssh",
 
-  // GitHub Copilot
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false,
-    "json": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-
   // JavaScript/TypeScript
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.preferences.quoteStyle": "single",
+
+  // Prettier
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
 
   // Search
   "search.exclude": {
@@ -151,9 +150,7 @@
   // Chat & AI
   "chat.agent.enabled": true,
   "chat.mcp.gallery.enabled": true,
-
-  // Remote
-  "remote.defaultExtensionsIfInstalledLocally": ["GitHub.copilot", "GitHub.copilot-chat"],
+  "chat.useAgentSkills": true,
 
   // Telemetry
   "redhat.telemetry.enabled": false,
@@ -168,5 +165,24 @@
   },
   "editor.quickSuggestions": {
     "strings": true
+  },
+
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
+
+  // Google Cloud
+  "google.cloud.project": "nexbridge-486208",
+  "geminicodeassist.project": "nexbridge-486208",
+  "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "geminicodeassist.displayInlineContextHint": false,
+
+  // JSON Schema
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true
   }
 }
